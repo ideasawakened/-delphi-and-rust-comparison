@@ -84,6 +84,7 @@ This document is not intended as a beginner tutorial, a language popularity rank
 > This section provides concrete, scenario-driven guidance to help developers decide between
 > **Delphi** and **Rust**.  
 > Rather than listing features, it focuses on *project context*, *constraints*, and *long-term outcomes*.
+> This section focuses on project-level fit and developer experience. Organizational readiness and risk tolerance are addressed later.
 
 ## B.1 Pick **Delphi** If...
 
