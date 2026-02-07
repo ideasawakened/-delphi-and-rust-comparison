@@ -45,6 +45,30 @@ This document is not intended as a beginner tutorial, a language popularity rank
 
 ---
 
+
+## Contents
+
+- [Section A - Quick Decision Matrix](#section-a---quick-decision-matrix)
+- [Section B - "Pick This If..." Decision Guides](#section-b---pick-this-if-decision-guides)
+- [Section C - CI/CD, Automation, and Workflow Realities](#section-c---cicd-automation-and-workflow-realities)
+- [Section D - Compliance and Supply Chain Considerations](#section-d---compliance-and-supply-chain-considerations)
+- [Section E - Team Skills, Hiring, and Longevity](#section-e---team-skills-hiring-and-longevity)
+- [Section F - Learning Curve and Cognitive Load](#section-f---learning-curve-and-cognitive-load)
+- [Section G - Long-Term Maintenance and Evolution Risk](#section-g---long-term-maintenance-and-evolution-risk)
+- [Section H - Integration with Existing Systems](#section-h---integration-with-existing-systems)
+- [Section I - Debugging, Observability, and Production Diagnostics](#section-i---debugging-observability-and-production-diagnostics)
+- [Section J - Performance Tuning and Profiling](#section-j---performance-tuning-and-profiling)
+- [Section K - Migration, Incremental Adoption, and Coexistence](#section-k---migration-incremental-adoption-and-coexistence)
+- [Section L - Ecosystem Maturity and Long-Term Viability](#section-l---ecosystem-maturity-and-long-term-viability)
+- [Section M - Risk Profiles and Failure Modes](#section-m---risk-profiles-and-failure-modes)
+- [Section N - Decision Checklist and Commitment Review](#section-n---decision-checklist-and-commitment-review)
+- [Closing Notes](#closing-notes)
+- [Appendix - Common Misconceptions](#appendix---common-misconceptions)
+- [Links and Further Reading](#links-and-further-reading)
+
+
+---
+
 # Section A - Quick Decision Matrix
 
 ## Project and Platform Scenarios
