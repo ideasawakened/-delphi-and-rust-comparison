@@ -1152,10 +1152,76 @@ The right choice depends on which failures your organization can tolerate, when 
 
 
 
+## Section N - Decision Checklist and Commitment Review
+
+This section is intended to be used after reviewing the earlier sections. It does not compare Delphi and Rust again. Instead, it helps teams confirm that they are prepared to commit to the implications of their chosen tool.
+
+At this stage, the question is no longer "Which tool fits best?" but rather "Are we prepared to succeed with the tool we have chosen?"
+
+---
+
+### Organizational Readiness Checklist
+
+Use the following questions to validate alignment between the chosen tool, the team, and the organization.
+
+**Ownership and Responsibility**
+- Do we understand where responsibility for correctness, safety, and reliability will primarily reside?
+- Are we comfortable managing these risks through process and tooling, or through language-enforced constraints?
+- Do we have clear ownership for long-term maintenance and evolution?
+
+**Team Capability and Continuity**
+- Do we have sufficient in-house expertise to support this tool over time?
+- Is our onboarding plan realistic given the learning curve involved?
+- How will we mitigate knowledge concentration and personnel turnover?
+
+**Workflow and Operations**
+- Does our CI/CD model align with the assumptions of the chosen toolchain?
+- Are build, test, and deployment workflows well understood and supportable?
+- Do we have adequate debugging, observability, and support practices in place?
+
+**Change and Evolution**
+- Are we prepared for the expected pace of ecosystem change?
+- How will we manage upgrades, dependency changes, and tooling evolution?
+- Is our architecture designed to absorb change incrementally?
+
+**Risk Tolerance**
+- Which failure modes are least acceptable for this system?
+- Are we prioritizing prevention of entire classes of defects, or rapid diagnosis and recovery when failures occur?
+- Do our testing, review, and operational practices reflect this priority?
+
+---
+
+### Commitment Review
+
+Before finalizing a decision, teams should be able to answer the following clearly:
+
+- We understand the trade-offs of the chosen tool.
+- We accept the risks it does not eliminate.
+- We have a plan to manage those risks over the system's lifetime.
+- Our organizational practices align with the assumptions of the tool.
+
+If these statements cannot be affirmed confidently, the decision may require reconsideration or additional mitigation planning.
+
+---
+
+### Final Note
+
+Tool choice does not determine success on its own.
+
+Successful projects align technology, team skills, workflows, and organizational expectations. A well-chosen tool amplifies good practices, but it does not replace them.
+
+The purpose of this document is not to make the decision for you, but to ensure that when a decision is made, it is deliberate, informed, and owned.
 
 
+
+
+
+
+---
 
 ## Closing Notes
+
+After examining technical, operational, and organizational considerations, it is worth returning to the broader perspective.
 
 Delphi and Rust are both capable, modern tools that reflect different priorities in software development.
 
