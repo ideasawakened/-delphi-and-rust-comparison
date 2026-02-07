@@ -1041,6 +1041,116 @@ Long-term viability depends not only on the tool itself, but on how well its eco
 
 ---
 
+## Section M - Risk Profiles and Failure Modes
+
+Every technology choice carries risk. Understanding not only what a tool is good at, but how it tends to fail, is essential for making informed decisions. Different tools shift risk to different parts of the development and operational lifecycle.
+
+This section examines the typical risk profiles and failure modes associated with Delphi and Rust.
+
+---
+
+### Classes of Failure
+
+**Delphi:**  
+Delphi systems most commonly fail due to:
+- Logical errors and unhandled edge cases
+- Resource management issues under complex workloads
+- Concurrency defects introduced through shared state
+- Knowledge loss in long-lived codebases
+
+These failures are often mitigated through testing, code review, tooling, and operational monitoring.
+
+**Rust:**  
+Rust systems most commonly fail due to:
+- Incorrect assumptions encoded into types or APIs
+- Misuse or misunderstanding of unsafe code boundaries
+- Dependency-related issues or ecosystem churn
+- Operational errors outside the scope of compile-time guarantees
+
+These failures are often front-loaded during development rather than appearing at runtime.
+
+---
+
+### Where Risk Is Managed
+
+**Delphi:**  
+Delphi manages risk primarily through:
+- Mature tooling and debuggers
+- Developer experience and discipline
+- Runtime inspection and diagnostics
+- Stable frameworks and long-term maintenance practices
+
+Risk is addressed through process and human oversight.
+
+**Rust:**  
+Rust manages risk primarily through:
+- Compile-time enforcement of memory and concurrency safety
+- Strong type systems and explicit error handling
+- Strict separation of safe and unsafe code
+- Ecosystem tooling for auditing and validation
+
+Risk is addressed through language design and compiler enforcement.
+
+---
+
+### Failure Detection Timing
+
+**Delphi:**  
+Many issues are discovered during testing or in production through logging and diagnostics. This allows flexibility but increases reliance on effective QA and operational monitoring.
+
+Delphi excels at diagnosing failures after they occur due to strong runtime tooling.  (With adequate automated testing minimizing production failures.)
+
+**Rust:**  
+Many issues are discovered during compilation. This reduces certain classes of runtime failures but can slow development and refactoring.
+
+When runtime failures do occur, they are often related to external systems or logic errors rather than memory safety.
+
+---
+
+### Operational Impact of Failures
+
+**Delphi:**  
+Failures in Delphi systems are often recoverable and diagnosable, especially in interactive applications. The impact depends heavily on testing coverage and operational practices.
+
+In environments with strong monitoring and support workflows, these risks are often manageable.
+
+**Rust:**  
+Failures in Rust systems are often less frequent but can be harder to patch quickly due to stricter constraints and deeper coupling between correctness and code structure.
+
+This suits systems where prevention is prioritized over rapid remediation.
+
+---
+
+### Risk Alignment with Organizational Culture
+
+**Delphi:**  
+Delphi aligns well with organizations that value:
+- Rapid delivery and iteration
+- Skilled developers and long-term ownership
+- Operational debugging and support
+- Controlled change and stability
+
+**Rust:**  
+Rust aligns well with organizations that value:
+- Preventing entire classes of bugs by design
+- Formal correctness and safety guarantees
+- Explicit design and review processes
+- Willingness to invest in upfront complexity
+
+---
+
+### Summary
+
+Delphi and Rust represent different risk management strategies.
+
+Delphi accepts more runtime risk in exchange for productivity, flexibility, and diagnosability. Rust accepts more upfront complexity in exchange for stronger guarantees and reduced runtime failure modes.
+
+The right choice depends on which failures your organization can tolerate, when it prefers to detect them, and how it responds when they occur.  
+
+---
+
+
+
 
 
 
