@@ -234,6 +234,9 @@ The best choice is rarely about language features in isolation, but about which 
 
 ---
 
+
+
+
 ## Section C - CI/CD, Automation, and Workflow Realities
 
 Modern software development relies heavily on automation, reproducible builds, and continuous integration. Delphi and Rust both support automated workflows, but they approach CI/CD from very different starting points.
@@ -300,6 +303,84 @@ Delphi integrates well into established enterprise pipelines where tooling stabi
 
 Choosing between them in CI/CD contexts is primarily an operational decision rather than a technical limitation.
 
+
+---
+## Section D - Compliance and Supply Chain Considerations
+
+Software supply chain risk, licensing compliance, and artifact traceability are increasingly important factors in tool selection. Delphi and Rust approach these concerns from different structural and ecosystem models.
+
+This section highlights differences in responsibility boundaries and risk profiles rather than prescribing a preferred approach.
+
+---
+
+### Toolchain Ownership and Responsibility
+
+**Delphi:**  
+Delphi is delivered as a commercially licensed toolchain with a single primary vendor. Responsibility for the compiler, core runtime, and tooling updates is centralized.
+
+This model simplifies accountability. Security fixes, compatibility updates, and tooling changes are managed by a single vendor with defined support channels.
+
+**Rust:**  
+Rust is developed as a community-driven, open-source ecosystem with multiple governing bodies and contributors. Responsibility is distributed across the language project, package maintainers, and downstream users.
+
+This model provides transparency and flexibility, but places more responsibility on teams to evaluate and manage upstream dependencies.
+
+---
+
+### Dependency and Package Ecosystem Risk
+
+**Delphi:**  
+Delphi projects commonly rely on a combination of:
+- Vendor-provided runtime libraries
+- Commercial third-party components
+- Internally maintained source code
+
+Supply chain risk is often managed through vendor relationships, contracts, and controlled distribution of third-party components.
+
+**Rust:**  
+Rust projects frequently depend on external packages from a large, decentralized ecosystem. Dependency graphs can be deep and involve many independent maintainers.
+
+While tooling exists to audit and lock dependencies, teams must actively monitor upstream changes, licensing, and security advisories.
+
+---
+
+### SBOM and Audit Considerations
+
+**Delphi:**  
+SBOM generation and compliance tooling are typically addressed at the organizational or build-system level rather than being tightly integrated into the language ecosystem.
+
+This aligns with environments where compliance processes are already established and managed centrally.
+
+**Rust:**  
+The Rust ecosystem has strong momentum around dependency visibility and audit tooling. Lockfiles and metadata facilitate SBOM generation, but interpretation and remediation remain the responsibility of the development team.
+
+The availability of tooling does not eliminate the need for governance.
+
+---
+
+### Regulatory and Enterprise Context
+
+**Delphi:**  
+Delphi is commonly used in regulated industries where long-term support, vendor accountability, and predictable tooling behavior are priorities.
+
+Compliance risk is often mitigated through controlled environments, vendor support agreements, and conservative upgrade policies.
+
+**Rust:**  
+Rust is increasingly adopted in safety-critical and security-sensitive domains due to its language-level guarantees.
+
+However, compliance readiness depends heavily on how dependencies are curated, reviewed, and maintained over time.
+
+---
+
+### Summary
+
+Both Delphi and Rust can be used in compliance-conscious environments, but they distribute responsibility differently.
+
+Delphi emphasizes centralized accountability and controlled tooling evolution. Rust emphasizes transparency and technical safeguards, coupled with increased responsibility for dependency management.
+
+The appropriate choice depends less on language capability and more on how your organization manages risk, accountability, and long-term maintenance.
+
+
 ---
 ## Closing Notes
 
@@ -312,6 +393,7 @@ Rust emphasizes correctness, memory safety, and compile-time enforcement of inva
 Neither approach is inherently superior. Each represents a different strategy for managing software complexity and risk.
 
 The most successful teams choose tools based on project requirements, organizational constraints, and the kinds of risks they are best equipped to manage, rather than on language popularity or ideology.
+
 
 
 ---
