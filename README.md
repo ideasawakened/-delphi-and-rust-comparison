@@ -17,7 +17,7 @@ This document compares Delphi and Rust as tools for building and maintaining sof
 
 Delphi prioritizes developer productivity, mature tooling, and long-term stability. It is well suited to organizations building commercial applications, especially those with rich user interfaces, long product lifecycles, and a need for predictable support and maintenance.
 
-Rust prioritizes correctness, safety, and reliability through strict language rules enforced at compile time. It is well suited to systems where failures are costly, concurrency is complex, and long-term correctness outweighs speed of development.
+Rust prioritizes correctness, safety, and reliability through strict language rules enforced at compile-time. It is well suited to systems where failures are costly, concurrency is complex, and long-term correctness outweighs speed of development.
 
 Neither choice is inherently better. The appropriate tool depends on factors such as:
 - The type of software being built
@@ -73,7 +73,7 @@ This document is not intended as a beginner tutorial, a language popularity rank
 ## Notes
 
 - Delphi optimizes for developer productivity, rapid UI development, and long-lived native applications.
-- Rust optimizes for correctness, memory safety, and performance, enforced at compile time.
+- Rust optimizes for correctness, memory safety, and performance, enforced at compile-time.
 - In many scenarios, both tools are technically capable; the deciding factor is whether risk is managed primarily by tooling and process (Delphi) or by the language and compiler (Rust).
 
 
@@ -152,7 +152,7 @@ Choose Rust when correctness guarantees, safety, and robustness are primary conc
 - Failures have high operational cost
 
 **Why Rust fits:**  
-Rust enforces memory safety and data-race freedom at compile time.
+Rust enforces memory safety and data-race freedom at compile-time.
 
 ---
 
@@ -527,7 +527,7 @@ Many issues are discovered during testing or runtime. Delphi's debugger and tool
 This supports iterative development and exploratory debugging.
 
 **Rust:**  
-Many errors are detected at compile time, reducing the likelihood of runtime failures. Debugging often focuses more on logic and behavior than on memory safety.
+Many errors are detected at compile-time, reducing the likelihood of runtime failures. Debugging often focuses more on logic and behavior than on memory safety.
 
 However, compiler error messages can be dense, and understanding them requires familiarity with Rust's type and ownership systems.
 
