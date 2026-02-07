@@ -1204,7 +1204,7 @@ If these statements cannot be affirmed confidently, the decision may require rec
 
 ---
 
-### Final Note
+### Summary
 
 Tool choice does not determine success on its own.
 
