@@ -26,6 +26,25 @@ This document is not intended as a beginner tutorial, a language popularity rank
 
 ---
 
+## Executive Summary for Non-Technical Stakeholders
+
+This document compares Delphi and Rust as tools for building and maintaining software systems. Both are capable technologies, but they are optimized for different organizational priorities.
+
+Delphi prioritizes developer productivity, mature tooling, and long-term stability. It is well suited to organizations building commercial applications, especially those with rich user interfaces, long product lifecycles, and a need for predictable support and maintenance.
+
+Rust prioritizes correctness, safety, and reliability through strict language rules enforced at compile time. It is well suited to systems where failures are costly, concurrency is complex, and long-term correctness outweighs speed of development.
+
+Neither choice is inherently better. The appropriate tool depends on factors such as:
+- The type of software being built
+- The expected lifespan of the system
+- Hiring and retention strategy
+- Compliance and operational requirements
+- Tolerance for change versus need for stability
+
+This comparison is intended to support informed decision-making by clarifying trade-offs rather than promoting a single solution.
+
+---
+
 # Section A - Quick Decision Matrix
 
 ## Project and Platform Scenarios
